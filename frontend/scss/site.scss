@@ -1,6 +1,8 @@
+@use 'global' as *;
+
 body{
-    background-color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: $white-smoke;
+    font-family: $font-arial;
     font-size: 16px;
     margin: 0;
     overflow-x: hidden;
@@ -13,11 +15,11 @@ html, body {
 }
 
 .navbar{
-    font-family: "Source Sans Pro",sans-serif;
+    font-family: $font-sans;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: $super-bold-700;
     font-stretch: semi-expanded;
-    background-color: #313332;
+    background-color: $coffee-without-opacity;
     // margin-top: 0px;
 }
 
@@ -75,7 +77,7 @@ html, body {
         & > .nav-link{
             display: block;
             padding: 0.5rem 1rem;
-            color: #f0f0f0;
+            color: $white-smoke;
             text-decoration: none;
             transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
             font-variant: small-caps;
@@ -84,8 +86,8 @@ html, body {
         } 
         
         & > .nav-link:hover {
-            color: #fd7e14 !important;
-            background-color: rgba(117, 121, 120, 0.4);
+            color: $orange !important;
+            background-color: $coffee-with-opacity;
             transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
         }
   
@@ -95,10 +97,9 @@ html, body {
 }
 
 .footer-page{
-    background-color: #202028;
-    color: #f0f0f0;
+    background-color: $coffee-without-opacity;
+    color: $white-smoke;
     position: absolute; 
-    // bottom: 0; 
     left: 0; 
     right: 0;
 
@@ -109,14 +110,15 @@ html, body {
             & > .col-company-section{
 
                 padding: 10px 50px;
-                font-family: 'Roboto', sans-serif;
+                font-family: $font-roboto;
     
                 & > .company-section{
     
-                    & > .ul-company-section-1{
+                    & > .ul-company-section{
+
                         & > .li-company-section-header{
                             list-style: none;
-                            font-weight: 700;
+                            font-weight: $super-bold-700;
                             margin-bottom: 20px;
                             margin-top: 10px;
                             font-size: 1.0rem;
@@ -124,11 +126,11 @@ html, body {
             
                         & > .li-company-section-items{
                             list-style: none;
-                            font-weight: 200;
+                            font-weight: $super-bold-200;
                             margin-bottom: 20px;
                             margin-top: 10px;
                             font-size: 0.9rem;
-                            margin-left: 10px;
+                            margin-left: 25px;
                         }
                     }
         
@@ -137,6 +139,62 @@ html, body {
         
                 
             }
+
+            & > .col-contact-section{
+                padding: 10px 50px;
+                font-family: $font-roboto;
+
+                & > .contact-section{
+    
+                    & > .ul-contact-section{
+
+                        & > .li-contact-section-header{
+                            list-style: none;
+                            font-weight: $super-bold-700;
+                            margin-bottom: 20px;
+                            margin-top: 10px;
+                            font-size: 1.0rem;
+                        }
+            
+                        & > .li-contact-section-items{
+                            list-style: none;
+                            font-weight: $super-bold-200;
+                            margin-bottom: 20px;
+                            margin-top: 10px;
+                            font-size: 0.9rem;
+                            margin-left: 25px;
+                        }
+                    }
+        
+                }
+
+                & > .social-section{
+    
+                    & > .ul-social-section{
+
+                        & > .li-social-section-header{
+                            list-style: none;
+                            font-weight: $super-bold-700;
+                            margin-bottom: 20px;
+                            margin-top: 10px;
+                            font-size: 1.0rem;
+                        }
+            
+                        & > .li-social-section-items{
+                            list-style: none;
+                            display: inline-block;
+                            margin-bottom: 30px;
+                            margin-top: 0;
+                            margin-left: 25px;
+                        }
+
+                        & > .li-social-section-items :hover{
+                            opacity: 0.5;
+                        }
+                    }
+        
+                }
+            }
         }
 
         & > .footer-copyright{
@@ -144,8 +202,10 @@ html, body {
                 & > .copyright-section{
                     & > .p-copyright{
                         margin: 20px 0;
-                        font-weight: 500;
+                        font-weight: $super-bold-500;
+                        font-size: 0.9rem;
                         vertical-align: middle;
+                        font-family: $font-roboto;
                     }
                 }
             }
@@ -161,11 +221,11 @@ html, body {
 @media (max-width: 990px){
 
     .navbar{
-        font-family: "Source Sans Pro",sans-serif;
+        font-family: $font-sans;
         font-size: 0.9rem;
-        font-weight: 500;
+        font-weight: $super-bold-500;
         font-stretch: semi-expanded;
-        background-color: #313332;
+        background-color: $dark-green;
         // margin-top: -50px;
 
         & > .container-fluid{
@@ -177,24 +237,11 @@ html, body {
             & >.navbar-toggler:focus {
                 text-decoration: none;
                 outline: 0;
-                background-color: rgba(117, 121, 120, 0.4);
+                background-color: $coffee-with-opacity;
                 transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
                 border:0;
-                color:transparent;
+                color:$transparent;
             }
-
-            & >.navbar-toggler:before {
-                text-decoration: none;
-                outline: 0;
-                background-color: rgba(4, 139, 106, 1);
-                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-                border:0;
-                color:transparent;
-            }
-
-            // & > .navbar-collapse{
-            //     margin-top: -50px;
-            // }
 
         }
     }
@@ -230,5 +277,117 @@ html, body {
       
         }
     
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-page{
+        background-color: $coffee-without-opacity;
+        color: $white-smoke;
+        position: absolute;  
+        left: 0; 
+        right: 0;
+        transition: right 0.5s;
+    
+        & > footer {
+    
+            & > .footer-information-page{
+    
+                & > .col-company-section{
+    
+                    padding: 0;
+                    font-family: $font-roboto;
+                    margin: 0;
+        
+                    & > .company-section{
+
+                        padding: 0;
+        
+                        & > .ul-company-section{
+                            
+                            padding: 0;
+                            text-align: center;
+
+                            & > .li-company-section-header{
+                                list-style: none;
+                                font-weight: $super-bold-700;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.9rem;
+                            }
+                
+                            & > .li-company-section-items{
+                                list-style: none;
+                                font-weight: $super-bold-200;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.8rem;
+                                margin-left: 0;
+                            }
+                        }
+            
+                        
+                    }
+            
+                    
+                }
+
+                & > .col-contact-section{
+    
+                    padding: 0;
+                    font-family: $font-roboto;
+                    margin: 0;
+        
+                    & > .contact-section{
+
+                        padding: 0;
+        
+                        & > .ul-contact-section{
+                            
+                            padding: 0;
+                            text-align: center;
+
+                            & > .li-contact-section-header{
+                                list-style: none;
+                                font-weight: $super-bold-700;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.9rem;
+                            }
+                
+                            & > .li-contact-section-items{
+                                list-style: none;
+                                font-weight: $super-bold-200;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.8rem;
+                                margin-left: 0;
+                            }
+                        }
+            
+                        
+                    }
+            
+                    
+                }
+            }
+    
+            & > .footer-copyright{
+                & > .col-copyright{
+                    & > .copyright-section{
+                        & > .p-copyright{
+                            margin: 20px 0;
+                            font-weight: $super-bold-500;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+        
+           
+    
+            
+        
     }
 }
