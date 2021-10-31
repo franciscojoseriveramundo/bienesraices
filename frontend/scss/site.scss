@@ -1,5 +1,7 @@
 @use 'global' as *;
 
+/*CSS General*/
+
 body{
     background-color: $white-smoke;
     font-family: $font-arial;
@@ -20,7 +22,6 @@ html, body {
     font-weight: $super-bold-700;
     font-stretch: semi-expanded;
     background-color: $coffee-without-opacity;
-    // margin-top: 0px;
 }
 
 // .loading-page{
@@ -90,13 +91,11 @@ html, body {
             background-color: $coffee-with-opacity;
             transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
         }
-  
     }
-
-
 }
 
 .footer-page{
+    
     background-color: $coffee-without-opacity;
     color: $white-smoke;
     position: absolute; 
@@ -130,14 +129,10 @@ html, body {
                             margin-bottom: 20px;
                             margin-top: 10px;
                             font-size: 0.9rem;
-                            margin-left: 25px;
+                            margin-left: 0;
                         }
-                    }
-        
-                    
-                }
-        
-                
+                    }   
+                }         
             }
 
             & > .col-contact-section{
@@ -147,6 +142,7 @@ html, body {
                 & > .contact-section{
     
                     & > .ul-contact-section{
+                        padding-left: 35%;
 
                         & > .li-contact-section-header{
                             list-style: none;
@@ -154,6 +150,7 @@ html, body {
                             margin-bottom: 20px;
                             margin-top: 10px;
                             font-size: 1.0rem;
+                            margin-left: 0;
                         }
             
                         & > .li-contact-section-items{
@@ -162,15 +159,15 @@ html, body {
                             margin-bottom: 20px;
                             margin-top: 10px;
                             font-size: 0.9rem;
-                            margin-left: 25px;
+                            margin-left: 0;
                         }
                     }
-        
                 }
 
                 & > .social-section{
-    
-                    & > .ul-social-section{
+                    
+                    & > .ul-social-section{  
+                        padding-left: 35%;
 
                         & > .li-social-section-header{
                             list-style: none;
@@ -185,7 +182,7 @@ html, body {
                             display: inline-block;
                             margin-bottom: 30px;
                             margin-top: 0;
-                            margin-left: 25px;
+                            margin-left: 0;
                         }
 
                         & > .li-social-section-items :hover{
@@ -210,14 +207,154 @@ html, body {
                 }
             }
         }
-    }
-    
-       
-
-        
-    
+    }  
 }
 
+/*CSS General (Max: 861px - Min: 576px)*/
+@media (max-width: 861px) and (min-width: 576px){
+    .footer-page{
+        background-color: $coffee-without-opacity;
+        color: $white-smoke;
+        position: absolute;  
+        left: 0; 
+        right: 0;
+        transition: right 0.5s;
+    
+        & > footer {
+    
+            & > .footer-information-page{
+    
+                & > .col-company-section{
+    
+                    padding: 0;
+                    font-family: $font-roboto;
+                    margin: 0;
+        
+                    & > .company-section{
+
+                        padding: 0;
+        
+                        & > .ul-company-section{
+                            
+                            padding: 0;
+                            text-align: center;
+
+                            & > .li-company-section-header{
+                                list-style: none;
+                                font-weight: $super-bold-700;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.9rem;
+                            }
+                
+                            & > .li-company-section-items{
+                                list-style: none;
+                                font-weight: $super-bold-200;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.8rem;
+                                margin-left: 0;
+                                
+                            }
+                        }
+            
+                        
+                    }
+            
+                    
+                }
+
+                & > .col-contact-section{
+    
+                    padding: 0;
+                    font-family: $font-roboto;
+                    margin: 0;
+        
+                    & > .contact-section{
+
+                        padding: 0;
+        
+                        & > .ul-contact-section{
+                            
+                            padding: 0;
+                            text-align: center;
+
+                            & > .li-contact-section-header{
+                                list-style: none;
+                                font-weight: $super-bold-700;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.9rem;
+                            }
+                
+                            & > .li-contact-section-items{
+                                list-style: none;
+                                font-weight: $super-bold-200;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.8rem;
+                                margin-left: 0;
+                            }
+                        }
+            
+                        
+                    }
+            
+                    & > .social-section{
+                        margin: 40px 0 0 0;
+
+                        & > .ul-social-section{
+                            
+                            text-align: center;
+                            padding: 0;
+
+                            & > .li-social-section-header{
+                                list-style: none;
+                                font-weight: $super-bold-700;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.9rem;
+                            }
+                
+                            & > .li-social-section-items{
+                                list-style: none;
+                                display: inline-block;
+                                margin-bottom: 30px;
+                                margin-top: 0;
+                                margin-left: 0;
+                                margin: 10px;
+                            }
+    
+                            & > .li-social-section-items :hover{
+                                opacity: 0.5;
+                            }
+                        }
+            
+                    }
+                }
+            }
+    
+            & > .footer-copyright{
+                & > .col-copyright{
+                    & > .copyright-section{
+                        & > .p-copyright{
+                            margin: 20px 0;
+                            font-weight: $super-bold-500;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+        
+           
+    
+            
+        
+    }
+}
+
+/*CSS General (Max: 900px) -- Se aplica únicamente para el menu principal*/
 @media (max-width: 990px){
 
     .navbar{
@@ -225,7 +362,7 @@ html, body {
         font-size: 0.9rem;
         font-weight: $super-bold-500;
         font-stretch: semi-expanded;
-        background-color: $dark-green;
+        background-color: $coffee-without-opacity;
         // margin-top: -50px;
 
         & > .container-fluid{
@@ -280,7 +417,9 @@ html, body {
     }
 }
 
+/*CSS General (Min: 575px)*/
 @media (max-width: 575px) {
+
     .footer-page{
         background-color: $coffee-without-opacity;
         color: $white-smoke;
@@ -323,13 +462,10 @@ html, body {
                                 margin-top: 10px;
                                 font-size: 0.8rem;
                                 margin-left: 0;
+                                
                             }
-                        }
-            
-                        
-                    }
-            
-                    
+                        }   
+                    }           
                 }
 
                 & > .col-contact-section{
@@ -368,7 +504,37 @@ html, body {
                         
                     }
             
-                    
+                    & > .social-section{
+                        margin: 40px 0 0 0;
+
+                        & > .ul-social-section{
+                            
+                            text-align: center;
+                            padding: 0;
+
+                            & > .li-social-section-header{
+                                list-style: none;
+                                font-weight: $super-bold-700;
+                                margin-bottom: 20px;
+                                margin-top: 10px;
+                                font-size: 0.9rem;
+                            }
+                
+                            & > .li-social-section-items{
+                                list-style: none;
+                                display: inline-block;
+                                margin-bottom: 30px;
+                                margin-top: 0;
+                                margin-left: 0;
+                                margin: 10px;
+                            }
+    
+                            & > .li-social-section-items :hover{
+                                opacity: 0.5;
+                            }
+                        }
+            
+                    }
                 }
             }
     
@@ -383,11 +549,6 @@ html, body {
                     }
                 }
             }
-        }
-        
-           
-    
-            
-        
+        }       
     }
 }
