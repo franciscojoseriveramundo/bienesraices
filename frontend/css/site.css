@@ -19,7 +19,7 @@ html, body {
   font-size: 1.2rem;
   font-weight: 700;
   font-stretch: semi-expanded;
-  background-color: transparent;
+  background-color: #202028;
 }
 .navbar > .container-fluid > a > img {
   opacity: 0.5;
@@ -57,7 +57,7 @@ html, body {
 .nav-bar-site > .nav-item > .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #202028;
+  color: #f0f0f0;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 1s ease-in-out;
   font-variant: small-caps;
@@ -281,8 +281,8 @@ html, body {
     margin-bottom: 0 !important;
   }
   .nav-bar-site > .nav-item {
-    width: 30%;
-    margin: 0 35%;
+    width: 50%;
+    margin: 0 25%;
   }
   .nav-bar-site > .nav-item > .nav-link {
     display: block;

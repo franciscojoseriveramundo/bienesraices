@@ -1,11 +1,10 @@
 .departments-carousel-section {
   padding-left: 0;
   padding-right: 0;
-  position: absolute;
-  top: 0;
 }
 .departments-carousel-section > .row > .col-departments > .carousel {
   width: 100%;
+  margin-top: 75px;
 }
 .departments-carousel-section > .row > .col-departments > .carousel > .carousel-inner > .carousel-item > img {
   max-height: 400px;
@@ -14,8 +13,6 @@
 .information-section {
   margin-bottom: 5%;
   background-color: transparent;
-  position: relative;
-  margin-top: 25% !important;
 }
 .information-section > .row > .my-home-promotional {
   font-family: "Poppins", sans-serif;
@@ -51,7 +48,7 @@
 }
 .information-section > .row > .articles-sections-information :hover img {
   width: calc(100% + 10px);
-  transition: all 0.8s ease-out;
+  transition: all 0.4s ease-out;
 }
 .information-section > .row > .articles-sections-information :hover .card-title {
   color: #fd7e14;
@@ -66,7 +63,7 @@
   }
   .departments-carousel-section > .row > .col-departments > .carousel {
     width: 100%;
-    margin-top: 0;
+    margin-top: 70px;
   }
   .departments-carousel-section > .row > .col-departments > .carousel > .carousel-inner > .carousel-item > img {
     max-height: 400px;
