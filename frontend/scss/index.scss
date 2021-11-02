@@ -1,18 +1,20 @@
 .departments-carousel-section{
     padding-left: 0;
     padding-right: 0;
+    position: absolute;
+    top: 0;
 
     & > .row{
         & > .col-departments{
            & > .carousel{
                 width: 100%;
-                margin-top: 10px;
+                // margin-top: 10px;
 
                 & > .carousel-inner{
-                    border-top-left-radius: 5px;
-                    border-bottom-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                    border-bottom-right-radius: 5px;
+                    // border-top-left-radius: 5px;
+                    // border-bottom-left-radius: 5px;
+                    // border-top-right-radius: 5px;
+                    // border-bottom-right-radius: 5px;
 
                     & > .carousel-item{
                         & > img{
@@ -28,8 +30,11 @@
 .information-section{
     margin-bottom: 5%;
     background-color: #fffafa;
+    position: relative;
+    margin-top: 25% !important;
     
     & > .row{
+
         & > .buy-article, .sign-in-article{
             padding-left: 10%;
             padding-right: 5%;
@@ -41,6 +46,38 @@
             padding-right: 10%;
             padding-top: 5%;
         }
+
+        & > .articles-sections-information{
+            & > .content-article{
+                & > .card{
+                    border: 0;
+                    border-radius: 15px;
+
+                    & > .card-body{
+                        & > .card-title{
+                            font-family: "Roboto", sans-serif;
+                            font-weight: 700;
+                            font-size: 1.1rem;
+                            text-align: justify;
+                        }
+                        & > .card-text{
+                            font-family: "Roboto", sans-serif;
+                            font-weight: 100;
+                            font-size: 0.9rem;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+
+        // & > *{
+        //     & > .card-body{
+        //         font-family: "Roboto", sans-serif;
+        //         font-weight: 700;
+        //         font-size: 1.2rem;
+        //     }
+        // }
     }
 
     // & > .articles-sections-information{
@@ -52,6 +89,68 @@
     //         padding: 10px 30px;
     //     }
     // }
+}
+
+@media (max-width: 990px){
+
+    .departments-carousel-section{
+        padding-left: 0;
+        padding-right: 0;
+        position: unset;
+    
+        & > .row{
+            & > .col-departments{
+               & > .carousel{
+                    width: 100%;
+                    margin-top: 0;
+    
+                    & > .carousel-inner{
+                        // border-top-left-radius: 5px;
+                        // border-bottom-left-radius: 5px;
+                        // border-top-right-radius: 5px;
+                        // border-bottom-right-radius: 5px;
+    
+                        & > .carousel-item{
+                            & > img{
+                                max-height: 400px;
+                            }
+                        }
+                    }
+               } 
+            }
+        }
+    }
+
+    .information-section{
+        margin-bottom: 5%;
+        background-color: #fffafa;
+        position: relative;
+        margin-top: 0px !important;
+        
+        & > .row{
+            & > .buy-article, .sign-in-article{
+                padding-left: 10%;
+                padding-right: 5%;
+                padding-top: 5%;
+            }
+    
+            & > .purchase-article, .follow-article{
+                padding-left: 5%;
+                padding-right: 10%;
+                padding-top: 5%;
+            }
+        }
+    
+        // & > .articles-sections-information{
+    
+        //     padding: 5% 10%;
+    
+        //     & > .content-article{
+        //         width: 100%;
+        //         padding: 10px 30px;
+        //     }
+        // }
+    }
 }
 
 
