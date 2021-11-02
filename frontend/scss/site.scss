@@ -21,7 +21,7 @@ html, body {
     font-size: 1.2rem;
     font-weight: $super-bold-700;
     font-stretch: semi-expanded;
-    background-color: $transparent;
+    background-color: $coffee-without-opacity;
 
     & > .container-fluid{
         & > a{
@@ -94,7 +94,7 @@ html, body {
         & > .nav-link{
             display: block;
             padding: 0.5rem 1rem;
-            color: $coffee-without-opacity;
+            color: $white-smoke;
             text-decoration: none;
             transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 1s ease-in-out;
             font-variant: small-caps;
@@ -431,8 +431,8 @@ html, body {
     
         & > .nav-item{
 
-            width: 30%;
-            margin: 0 35%;
+            width: 50%;
+            margin: 0 25%;
     
             & > .nav-link{
                 display: block;
