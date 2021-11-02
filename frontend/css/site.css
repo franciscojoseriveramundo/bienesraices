@@ -25,6 +25,30 @@ html, body {
   opacity: 0.5;
 }
 
+.loading-page {
+  z-index: 1;
+  background-color: white;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.loading-page > .spinner-border {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: -0.125em;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 0.75s linear infinite spinner-border;
+  animation: 0.75s linear infinite spinner-border;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+}
+
 .nav-bar-site {
   margin-right: 0px !important;
   line-height: 2.5;

@@ -1,3 +1,5 @@
+@use 'global' as *;
+
 .departments-carousel-section{
     padding-left: 0;
     padding-right: 0;
@@ -29,19 +31,31 @@
 
 .information-section{
     margin-bottom: 5%;
-    background-color: #fffafa;
+    background-color: $transparent;
     position: relative;
     margin-top: 25% !important;
     
     & > .row{
 
-        & > .buy-article, .sign-in-article{
+        & > .my-home-promotional{
+            font-family: $font-poppins;
+            font-size: 1.3rem;
+            text-align: center;
+            font-weight: $super-bold-700;
+            width: 70%;
+            margin: 5% 15% 0% 15%;
+            color: $coffee-without-opacity;
+            
+        }
+
+        & > .ground-article, .office-article{
             padding-left: 10%;
             padding-right: 5%;
             padding-top: 5%;
         }
 
-        & > .purchase-article, .follow-article{
+        
+        & > .department-article, .home-article{
             padding-left: 5%;
             padding-right: 10%;
             padding-top: 5%;
@@ -54,21 +68,42 @@
                     border-radius: 15px;
 
                     & > .card-body{
+
                         & > .card-title{
-                            font-family: "Roboto", sans-serif;
+
+                            font-family: $font-poppins;
                             font-weight: 700;
-                            font-size: 1.1rem;
+                            font-size: 1.5rem;
                             text-align: justify;
+
                         }
-                        & > .card-text{
-                            font-family: "Roboto", sans-serif;
-                            font-weight: 100;
-                            font-size: 0.9rem;
-                            text-align: justify;
-                        }
+                        // & > .card-text{
+                        //     font-family: "Roboto", sans-serif;
+                        //     font-weight: 100;
+                        //     font-size: 0.9rem;
+                        //     text-align: justify;
+                        // }
                     }
                 }
             }
+        }
+
+        & > .articles-sections-information :hover
+        {
+            background-color: $transparent;               
+            
+            
+            img{
+                width: calc(100% + 10px);
+                transition: all 0.8s ease-out;
+            }
+
+            .card-title{
+                color: $orange;
+                font-size: 1rem;
+            }
+            
+            
         }
 
         // & > *{
@@ -128,13 +163,13 @@
         margin-top: 0px !important;
         
         & > .row{
-            & > .buy-article, .sign-in-article{
+            & > .ground-article, .office-article{
                 padding-left: 10%;
                 padding-right: 5%;
                 padding-top: 5%;
             }
     
-            & > .purchase-article, .follow-article{
+            & > .department-article, .home-article{
                 padding-left: 5%;
                 padding-right: 10%;
                 padding-top: 5%;
@@ -161,16 +196,33 @@
         background-color: #fffafa;
 
         & > .row{
-            & > .buy-article, .sign-in-article{
+            & > .ground-article, .office-article{
                 padding-left: 5%;
                 padding-right: 5%;
                 padding-top: 5%;
             }
     
-            & > .purchase-article, .follow-article{
+            & > .department-article, .home-article{
                 padding-left: 5%;
                 padding-right: 5%;
                 padding-top: 5%;
+            }
+
+            & > .articles-sections-information :hover
+            {
+                background-color: $transparent;               
+                
+                img{
+                    width: 100%;
+                    transition: none;
+                }
+
+                .card-title{
+                    color: unset;
+                    font-size: unset;
+                }
+                
+                
             }
         }
     }
