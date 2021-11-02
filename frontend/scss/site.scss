@@ -40,30 +40,30 @@ html, body {
 //     z-index: 1020;
 // }
 
-// .loading-page{
-//     z-index: 1;
-//     background-color: white;
-//     opacity: 1.0;
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
+.loading-page{
+    z-index: 1;
+    background-color: white;
+    opacity: 1.0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 
-//     & > .spinner-border {
-//         display: inline-block;
-//         width: 100px;
-//         height: 100px;
-//         vertical-align: -0.125em;
-//         border: 0.25em solid currentColor;
-//         border-right-color: transparent;
-//         border-radius: 50%;
-//         -webkit-animation: .75s linear infinite spinner-border;
-//         animation: .75s linear infinite spinner-border;
-//         position: absolute;
-//         left: 50%;
-//         top: 50%;
-//         margin: -20px 0 0 -20px;
-//     }
-// }
+    & > .spinner-border {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        vertical-align: -0.125em;
+        border: 0.25em solid currentColor;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: .75s linear infinite spinner-border;
+        animation: .75s linear infinite spinner-border;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -20px 0 0 -20px;
+    }
+}
 
 // .container-principal{
 //     width: 95%;
