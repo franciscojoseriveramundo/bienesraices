@@ -3,7 +3,7 @@
 /*CSS General*/
 
 body{
-    background-color: $white-smoke;
+    background-color: $transparent;
     font-family: $font-arial;
     font-size: 16px;
     margin: 0;
@@ -21,8 +21,24 @@ html, body {
     font-size: 1.2rem;
     font-weight: $super-bold-700;
     font-stretch: semi-expanded;
-    background-color: $coffee-without-opacity;
+    background-color: $transparent;
+
+    & > .container-fluid{
+        & > a{
+            & > img{
+                opacity: 0.5;
+            }
+        }
+    }
 }
+
+// .sticky-top {
+//     position: -webkit-sticky !important;
+//     // position: fixed;
+//     width: -webkit-fill-available;
+//     top: 0;
+//     z-index: 1020;
+// }
 
 // .loading-page{
 //     z-index: 1;
@@ -78,9 +94,9 @@ html, body {
         & > .nav-link{
             display: block;
             padding: 0.5rem 1rem;
-            color: $white-smoke;
+            color: $coffee-without-opacity;
             text-decoration: none;
-            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 1s ease-in-out;
             font-variant: small-caps;
             letter-spacing: 0.25em;
             font-size: 0.9em;
@@ -89,7 +105,8 @@ html, body {
         & > .nav-link:hover {
             color: $orange !important;
             background-color: $coffee-with-opacity;
-            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+            border-bottom: 2px solid $white-smoke;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 1s ease-in-out;
         }
     }
 }
@@ -130,7 +147,16 @@ html, body {
                             margin-top: 10px;
                             font-size: 0.9rem;
                             margin-left: 0;
+
+                            
                         }
+
+                        & > .li-company-section-items:hover{
+                            color: $orange;
+                            font-weight: $super-bold-700;
+                        }
+
+                        
                     }   
                 }         
             }
@@ -160,6 +186,11 @@ html, body {
                             margin-top: 10px;
                             font-size: 0.9rem;
                             margin-left: 0;
+                        }
+
+                        & > .li-contact-section-items:hover{
+                            color: $orange;
+                            font-weight: $super-bold-700;
                         }
                     }
                 }
@@ -357,6 +388,7 @@ html, body {
 /*CSS General (Max: 900px) -- Se aplica únicamente para el menu principal*/
 @media (max-width: 990px){
 
+    
     .navbar{
         font-family: $font-sans;
         font-size: 0.9rem;
@@ -364,6 +396,14 @@ html, body {
         font-stretch: semi-expanded;
         background-color: $coffee-without-opacity;
         // margin-top: -50px;
+
+        & > .container-fluid{
+            & > a{
+                & > img{
+                    opacity: 1;
+                }
+            }
+        }
 
         & > .container-fluid{
 
@@ -387,6 +427,7 @@ html, body {
         margin-right: 0px !important;
         line-height: 1.5;
         margin-bottom: 0 !important;
+        
     
         & > .nav-item{
 
