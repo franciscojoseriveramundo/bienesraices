@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="https://kit.fontawesome.com/75e15f4dfe.js" crossorigin="anonymous"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <title>Bienes Raices - Página principal</title>
+
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/bienes_raices.png" width="60"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-site"
+        aria-controls="navbar-site" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="48" height="48"
+          viewBox="0 0 172 172"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M21.5,78.83333h129v14.33333h-129zM21.5,35.83333h129v14.33333h-129zM21.5,121.83333h129v14.33333h-129z"></path></g></g></svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-site">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-bar-site">
+
+            <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="index.html">Página principal</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="search.html">Buscar</a>
+            </li>
+
+            <li class="nav-item active">
+            <a class="nav-link hvr-underline-from-left" href="#">Iniciar sesión</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="publish.html">Publicar</a>
+            </li>
+
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="loading-page">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<section class="login-section container-fluid">
+    <div class="row img-login">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 article-login">
+            <img src="./images/login.png">
+        </div>
+    </div>
+    <div class="row userCredentials">
+
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 alert-message">
+          <div class="alert alert-success" role="alert">
+            Ingrese sus credenciales de acceso.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-user-credentials">
+            <input type="text" class="form-control" id="txtEmailUser" placeholder="Ingresa tu correo electrónico">
+        </div>
+        
+
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-user-credentials">
+            <input type="password" class="form-control" id="txtPassUser" placeholder="Ingresa tu contraseña">
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-user-credentials">
+            <button type="submit" class="btn btn-primary btn-submit-lgn">Iniciar sesión</button>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-user-recovery">
+          <div class="form-group text-center m-t-10 mb-0 row">
+            <div class="col-sm-12 m-t-20">
+                <a href="#" class="text-muted"><i class="fa fa-unlock"></i> <small>Olvide mi contraseña</small></a>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+</section>
+
+  
+<script src="./js/jquery/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./js/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
+    
+</body>
+</html>
