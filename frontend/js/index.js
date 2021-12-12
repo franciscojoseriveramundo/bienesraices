@@ -41,5 +41,6 @@ var carrouselFn = () => {
 }
 
 (function() {
+    menuBar(1);
     carrouselFn();
 })();
