@@ -32,7 +32,7 @@ var carrouselFn = () => {
 
         //Si es la primera vuelta del ciclo el valor sera un carousel activo y los posteriores no
         counterCarousel == 0 ? headerCarousel = "<div class=\"carousel-item active\">": headerCarousel = "<div class=\"carousel-item\">";
-        
+
         //Generamos el cuerpo de nuestras imagenes en codigo JS.
         carrouselImgs.innerHTML = carrouselImgs.innerHTML + (headerCarousel + bodyCarousel + footerCarousel);
 

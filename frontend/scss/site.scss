@@ -11,8 +11,8 @@ body{
 }
 
 html, body {
-    padding:0; 
-    margin:0; 
+    padding:0;
+    margin:0;
     height:100%;
 }
 
@@ -100,8 +100,8 @@ html, body {
             font-variant: small-caps;
             letter-spacing: 0.25em;
             font-size: 0.9em;
-        } 
-        
+        }
+
         & > .nav-link:hover {
             color: $orange !important;
             background-color: $coffee-with-opacity;
@@ -112,11 +112,11 @@ html, body {
 }
 
 .footer-page{
-    
+
     background-color: $coffee-without-opacity;
     color: $white-smoke;
-    position: absolute; 
-    left: 0; 
+    position: absolute;
+    left: 0;
     right: 0;
 
     & > footer {
@@ -127,9 +127,9 @@ html, body {
 
                 padding: 10px 50px;
                 font-family: $font-roboto;
-    
+
                 & > .company-section{
-    
+
                     & > .ul-company-section{
 
                         & > .li-company-section-header{
@@ -139,7 +139,7 @@ html, body {
                             margin-top: 10px;
                             font-size: 1.0rem;
                         }
-            
+
                         & > .li-company-section-items{
                             list-style: none;
                             font-weight: $super-bold-200;
@@ -148,7 +148,7 @@ html, body {
                             font-size: 0.9rem;
                             margin-left: 0;
 
-                            
+
                         }
 
                         & > .li-company-section-items:hover{
@@ -156,9 +156,9 @@ html, body {
                             font-weight: $super-bold-700;
                         }
 
-                        
-                    }   
-                }         
+
+                    }
+                }
             }
 
             & > .col-contact-section{
@@ -166,7 +166,7 @@ html, body {
                 font-family: $font-roboto;
 
                 & > .contact-section{
-    
+
                     & > .ul-contact-section{
                         padding-left: 35%;
 
@@ -178,7 +178,7 @@ html, body {
                             font-size: 1.0rem;
                             margin-left: 0;
                         }
-            
+
                         & > .li-contact-section-items{
                             list-style: none;
                             font-weight: $super-bold-200;
@@ -196,8 +196,8 @@ html, body {
                 }
 
                 & > .social-section{
-                    
-                    & > .ul-social-section{  
+
+                    & > .ul-social-section{
                         padding-left: 35%;
 
                         & > .li-social-section-header{
@@ -207,7 +207,7 @@ html, body {
                             margin-top: 10px;
                             font-size: 1.0rem;
                         }
-            
+
                         & > .li-social-section-items{
                             list-style: none;
                             display: inline-block;
@@ -220,7 +220,7 @@ html, body {
                             opacity: 0.5;
                         }
                     }
-        
+
                 }
             }
         }
@@ -238,7 +238,7 @@ html, body {
                 }
             }
         }
-    }  
+    }
 }
 
 /*CSS General (Max: 861px - Min: 576px)*/
@@ -246,27 +246,27 @@ html, body {
     .footer-page{
         background-color: $coffee-without-opacity;
         color: $white-smoke;
-        position: absolute;  
-        left: 0; 
+        position: absolute;
+        left: 0;
         right: 0;
         transition: right 0.5s;
-    
+
         & > footer {
-    
+
             & > .footer-information-page{
-    
+
                 & > .col-company-section{
-    
+
                     padding: 0;
                     font-family: $font-roboto;
                     margin: 0;
-        
+
                     & > .company-section{
 
                         padding: 0;
-        
+
                         & > .ul-company-section{
-                            
+
                             padding: 0;
                             text-align: center;
 
@@ -277,7 +277,7 @@ html, body {
                                 margin-top: 10px;
                                 font-size: 0.9rem;
                             }
-                
+
                             & > .li-company-section-items{
                                 list-style: none;
                                 font-weight: $super-bold-200;
@@ -285,28 +285,28 @@ html, body {
                                 margin-top: 10px;
                                 font-size: 0.8rem;
                                 margin-left: 0;
-                                
+
                             }
                         }
-            
-                        
+
+
                     }
-            
-                    
+
+
                 }
 
                 & > .col-contact-section{
-    
+
                     padding: 0;
                     font-family: $font-roboto;
                     margin: 0;
-        
+
                     & > .contact-section{
 
                         padding: 0;
-        
+
                         & > .ul-contact-section{
-                            
+
                             padding: 0;
                             text-align: center;
 
@@ -317,7 +317,7 @@ html, body {
                                 margin-top: 10px;
                                 font-size: 0.9rem;
                             }
-                
+
                             & > .li-contact-section-items{
                                 list-style: none;
                                 font-weight: $super-bold-200;
@@ -327,15 +327,15 @@ html, body {
                                 margin-left: 0;
                             }
                         }
-            
-                        
+
+
                     }
-            
+
                     & > .social-section{
                         margin: 40px 0 0 0;
 
                         & > .ul-social-section{
-                            
+
                             text-align: center;
                             padding: 0;
 
@@ -346,7 +346,7 @@ html, body {
                                 margin-top: 10px;
                                 font-size: 0.9rem;
                             }
-                
+
                             & > .li-social-section-items{
                                 list-style: none;
                                 display: inline-block;
@@ -355,16 +355,16 @@ html, body {
                                 margin-left: 0;
                                 margin: 10px;
                             }
-    
+
                             & > .li-social-section-items :hover{
                                 opacity: 0.5;
                             }
                         }
-            
+
                     }
                 }
             }
-    
+
             & > .footer-copyright{
                 & > .col-copyright{
                     & > .copyright-section{
@@ -377,18 +377,18 @@ html, body {
                 }
             }
         }
-        
-           
-    
-            
-        
+
+
+
+
+
     }
 }
 
 /*CSS General (Max: 900px) -- Se aplica únicamente para el menu principal*/
 @media (max-width: 990px){
 
-    
+
     .navbar{
         font-family: $font-sans;
         font-size: 0.9rem;
@@ -427,13 +427,13 @@ html, body {
         margin-right: 0px !important;
         line-height: 1.5;
         margin-bottom: 0 !important;
-        
-    
+
+
         & > .nav-item{
 
             width: 50%;
             margin: 0 25%;
-    
+
             & > .nav-link{
                 display: block;
                 padding: 0.5rem 1rem;
@@ -444,17 +444,17 @@ html, body {
                 letter-spacing: 0.1em;
                 font-size: 0.9em;
                 text-align: center;
-                
-            } 
-            
+
+            }
+
             & > .nav-link:hover {
                 color: #fd7e14 !important;
                 background-color: rgba(117, 121, 120, 0.4);
                 transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
             }
-      
+
         }
-    
+
     }
 }
 
@@ -464,27 +464,27 @@ html, body {
     .footer-page{
         background-color: $coffee-without-opacity;
         color: $white-smoke;
-        position: absolute;  
-        left: 0; 
+        position: absolute;
+        left: 0;
         right: 0;
         transition: right 0.5s;
-    
+
         & > footer {
-    
+
             & > .footer-information-page{
-    
+
                 & > .col-company-section{
-    
+
                     padding: 0;
                     font-family: $font-roboto;
                     margin: 0;
-        
+
                     & > .company-section{
 
                         padding: 0;
-        
+
                         & > .ul-company-section{
-                            
+
                             padding: 0;
                             text-align: center;
 
@@ -495,7 +495,7 @@ html, body {
                                 margin-top: 10px;
                                 font-size: 0.9rem;
                             }
-                
+
                             & > .li-company-section-items{
                                 list-style: none;
                                 font-weight: $super-bold-200;
@@ -503,24 +503,24 @@ html, body {
                                 margin-top: 10px;
                                 font-size: 0.8rem;
                                 margin-left: 0;
-                                
+
                             }
-                        }   
-                    }           
+                        }
+                    }
                 }
 
                 & > .col-contact-section{
-    
+
                     padding: 0;
                     font-family: $font-roboto;
                     margin: 0;
-        
+
                     & > .contact-section{
 
                         padding: 0;
-        
+
                         & > .ul-contact-section{
-                            
+
                             padding: 0;
                             text-align: center;
 
@@ -531,7 +531,7 @@ html, body {
                                 margin-top: 10px;
                                 font-size: 0.9rem;
                             }
-                
+
                             & > .li-contact-section-items{
                                 list-style: none;
                                 font-weight: $super-bold-200;
@@ -541,15 +541,15 @@ html, body {
                                 margin-left: 0;
                             }
                         }
-            
-                        
+
+
                     }
-            
+
                     & > .social-section{
                         margin: 40px 0 0 0;
 
                         & > .ul-social-section{
-                            
+
                             text-align: center;
                             padding: 0;
 
@@ -560,7 +560,7 @@ html, body {
                                 margin-top: 10px;
                                 font-size: 0.9rem;
                             }
-                
+
                             & > .li-social-section-items{
                                 list-style: none;
                                 display: inline-block;
@@ -569,16 +569,16 @@ html, body {
                                 margin-left: 0;
                                 margin: 10px;
                             }
-    
+
                             & > .li-social-section-items :hover{
                                 opacity: 0.5;
                             }
                         }
-            
+
                     }
                 }
             }
-    
+
             & > .footer-copyright{
                 & > .col-copyright{
                     & > .copyright-section{
@@ -590,6 +590,6 @@ html, body {
                     }
                 }
             }
-        }       
+        }
     }
 }
