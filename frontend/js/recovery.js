@@ -1,0 +1,3 @@
+(function() {
+    menuBar(0);
+})();

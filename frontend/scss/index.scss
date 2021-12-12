@@ -20,8 +20,8 @@
 
                     & > .carousel-item{
                         & > img{
-                            
-                            object-fit: fill;
+                            object-fit: cover;
+                            max-height: 400px;
                         }
                     }
                 }
