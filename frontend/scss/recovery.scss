@@ -25,15 +25,15 @@ body{
             margin-top: 5%;
             padding-left: 25%;
             padding-right: 25%;
-    
+
             & > img{
                 width: 20%;
                 margin-left: 40%;
                 margin-right: 40%;
                 padding-left: 0% 26%;
             }
-    
-        }        
+
+        }
     }
 
     & > .userCredentials{
@@ -127,7 +127,7 @@ body{
                 transition: all 0.5s;
             }
         }
-    }  
+    }
 }
 
 @media (max-width: 768px){
@@ -142,30 +142,30 @@ body{
         border: none;
         -webkit-box-shadow: none;
         box-shadow: none;
-    
+
         & > .img-login{
-    
+
             & > .article-login{
-    
+
                 width: 100%;
                 margin-top: 0;
                 padding-left: 25%;
                 padding-right: 25%;
-        
+
                 & > img{
                     width: 20%;
                     margin-left: 40%;
                     margin-right: 35%;
                     padding-left: 0% 40%;
                 }
-        
-            }        
+
+            }
         }
-    
+
         & > .userCredentials{
             width: 90%;
             margin: 5% 5%;
-    
+
             & > .alert-message{
                 font-size: 0.8rem;
                 font-family: $font-poppins;
@@ -184,9 +184,9 @@ body{
                     }
                 }
             }
-    
+
             & > .col-user-credentials{
-    
+
                 & > input[type=text]{
                     font-family: $font-poppins;
                     font-size: 0.8rem;
@@ -195,15 +195,15 @@ body{
                     box-sizing: border-box;
                     box-shadow: 0 0 10px #719ECE;
                 }
-    
+
                 & > input[type=text]:focus
                 {
                     padding: 10px 15px;
                     background-color: $white-smoke;
                     transition: all 0.5s;
                 }
-    
-    
+
+
                 & > .btn-submit-lgn{
                     width: 100%;
                     background-color: $coffee-without-opacity;
@@ -213,7 +213,7 @@ body{
                     margin: 10px 0;
                     border: none;
                 }
-    
+
                 & > .btn-submit-lgn:hover{
                     opacity: 0.9;
                     font-family: $font-poppins;
@@ -229,24 +229,24 @@ body{
                     margin: 10px 0 20px 0;
                     border: none;
                 }
-    
+
                 & > .btn-submit-return:hover{
                     opacity: 0.9;
                     font-family: $font-poppins;
                     transition: all 0.5s;
                 }
             }
-    
+
             & > .col-user-recovery{
-    
+
                 margin: 20px 0;
-    
+
                 a{
                     font-size: 0.75rem;
                     margin: 15px 0;
                     text-decoration: none;
                 }
-    
+
                 a:hover{
                     font-size: 0.8rem;
                     color: $orange;
@@ -254,6 +254,6 @@ body{
                     transition: all 0.5s;
                 }
             }
-        }  
+        }
     }
 }
