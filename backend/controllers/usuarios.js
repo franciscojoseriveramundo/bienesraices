@@ -89,7 +89,7 @@ function updateUser(req, res) {
   }
 
   if(found === false){
-    res.status(200).send(`Usuario ${req.params.id} no fue encontrado para ser eliminado`);
+    res.status(200).send(`Usuario ${req.params.id} no fue encontrado para ser actualizado`);
   }
   else{
     usuarioUpd = { ...usuario1, ...usuarioUpd }
