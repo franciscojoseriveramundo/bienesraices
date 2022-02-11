@@ -8,6 +8,8 @@
 //Menu Principal del Sitio
 let menuBar = (menuSelected) => buildMenuBar(getMenuItems(menuSelected), document.getElementsByClassName('nav-bar-site'));
 
+getMenu();
+
 //Obtiene los items que tendra el menu principal
 let getMenuItems = (menuSelected) => {
 
@@ -148,4 +150,10 @@ let isSessionIniciazate = (name) => {
 let closeSession = () =>{
     destroySession("emailSession");
     window.location.href = 'login.html';
+}
+
+function getMenu(){
+    fetch('http://127.0.0.1:3000/v1/menu')
+      .then(response => response.json())
+      .then(json => console.log(json))
 }
