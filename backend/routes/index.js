@@ -1,10 +1,9 @@
-var router = require('express').Router();
+const router = require('express').Router();
 
-router.get('/', (req, res)=>{
-  res.send('Bienvenido al API de Bienes Raices');
+router.get('/', (req, res) => {
+    res.send("Bienvenido a nuestra API")
 });
 
-router.use('/usuarios', require('./usuarios'));
-router.use('/menu', require('./menu'));
+router.use('/userrole', require('./userrole'));
 
 module.exports = router;
