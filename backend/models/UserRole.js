@@ -4,7 +4,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 // importamos sequelize con la opción de memory para forzar al gestor a almacenarla en la memoria.
 const sequelize = require('../config/bdConection');
 
-const UserRole = sequelize.define('userrole', {
+const UserRole = sequelize.define('UserRole', {
     UserRoleId:{
         type: DataTypes.BIGINT,
         primaryKey : true
@@ -15,7 +15,7 @@ const UserRole = sequelize.define('userrole', {
   },{
       freezeTableName : true,
       timestamps : false,
-      tableName: 'userrole'
+      tableName: 'UserRole'
   });
 
 module.exports = UserRole;

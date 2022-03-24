@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('bdbienesraices', 'rsoibrrtodudup', '7f6568f102d3e5a067aa4896ac15f979c5f1bdf2d85b620575bd7d1c6b01fb7a', {
-  host: '127.0.0.1',
+const sequelize = new Sequelize('bkvr6afh90lntut7zlay', 'uccyyf00d6p1cs9k', 'bAiGtlCuannbB7tZDT6T', {
+  host: 'bkvr6afh90lntut7zlay-mysql.services.clever-cloud.com',
   // una de estas opciones dependiendo el gestor de la base
   dialect: 'mysql',
 })
